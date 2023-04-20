@@ -1,6 +1,6 @@
 @media (max-width:1300px){
     #header{ 
-        height:56px;
+        height:auto;
     }
 
     .container{ 
@@ -86,7 +86,7 @@
     }
     .header h1 em{ 
         margin:-20px 0 0 0;
-        padding-top:10px;
+        padding-top:18px;
     }
     .header h1 strong{ 
         display:none;
@@ -626,4 +626,147 @@
     .service ul li:nth-child(4){ 
         border-top:1px solid #d7d7d7;
     }
+}
+
+@media (min-width:280px) and (max-width:599px){
+
+    /* banner */
+    .banner_menu{
+        height:30px;
+        padding:5px 0;
+    }
+    .banner_menu .bm_right ul li.bm-button a{
+        padding:3px 8px;
+    }
+    .slider .container{
+        padding-top:77px;
+    }
+
+    /* movie chart */
+    .movie-chart > div > div .infor{
+        padding:7%;
+    }
+    .movie-chart > div > div .infor h3 strong{
+        font-size:14px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .movie-chart > div > div .infor .infor_btn a{
+        width:100%;
+        padding:5px;
+        font-size:11px;
+        margin:0;
+
+    }
+
+    /* event */
+    .event .event-box > div span{
+        font-size: 9px;
+    }
+    .event .event-box > div p{
+        height:63px;
+    }
+    .event-btn{
+        padding:3px 8px;
+    }
+
+    /* new movie */
+    .new-movie .new-right .title{
+        font-size:24px;
+    }
+    .new-movie .new-right .summary .desc{
+        display:none;
+    }
+    .new-movie .new-right .select{
+        display:none;
+    }
+    .new-movie .new-right .btn a.new-button:nth-child(1){
+        display:none;
+    }
+    .new-movie .new-right .btn a.new-button2{
+        width:100%;
+        padding:7px 0;
+    }
+
+    /* help */
+    .help article.help-box1,
+    .help article.help-box2{
+        padding:16px;
+    }
+    /* 공지사항 */
+    .notice-btn{
+        padding:3px 8px;
+        top:-53px;
+    }
+    .notice > ul > li > a{
+        width:84px;
+        padding:2px;
+    }
+    .notice ul li ul{
+        top:44px;
+        left:11px;
+    }
+    .help article > div{
+        height:315px;
+    }
+
+    /* CGV 할인카드 */
+    .help article > div.card{
+        height:auto;
+    }
+    .help article h3{
+        font-size:23px;
+    }
+    .card-btn{
+        padding:3px 8px;
+        top:-53px;
+    }
+    .card ul li:last-child{
+        margin:0;
+    }
+    .card ul li a span {
+        display: block;
+        width:100%;
+        height:auto;
+        position: relative;
+    }
+    .card ul li a span img{
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .card ul li strong{
+        padding:77px 0 0 0;
+        text-align:center;
+    }    
+    .card ul li em{
+        padding:0;
+        text-align:center;
+    }
+
+    .help .help-box3{
+        display:none;
+    }
+
+    /* footer */
+    .footer-info{
+        padding:30px 0;
+    }
+    .footer-info h2 img{
+        width:85px;
+    }
+    .footer-info ul li{
+        padding:0 11px 0 0;
+    }
+    .footer-info ul li a{
+        font-size:12px;
+    }
+    .footer-info ul li::after{
+        right:2px;
+    }
+    .footer-info address p{
+        font-size:10px;
+    }
+
 }
