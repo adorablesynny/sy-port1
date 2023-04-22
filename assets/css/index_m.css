@@ -630,6 +630,13 @@
 
 @media (min-width:280px) and (max-width:599px){
 
+    .slider .swiper-slide h2{
+        font-size:23px;
+    }
+    .slider .swiper-slide h2 em{
+        font-size:19px;
+    }
+
     /* banner */
     .banner_menu{
         height:30px;
@@ -672,11 +679,23 @@
     }
 
     /* new movie */
+    .new-movie .new-left{
+        height:280px;
+    }
+    .new-movie .new-right{
+        padding:15px;
+    }
     .new-movie .new-right .title{
-        font-size:24px;
+        font-size:18px;
+    }
+    .new-movie .new-right .summary{
+        font-size:12px;
     }
     .new-movie .new-right .summary .desc{
         display:none;
+    }
+    .new-movie .new-right .star strong{
+        font-size:12px;
     }
     .new-movie .new-right .select{
         display:none;
@@ -697,7 +716,7 @@
     /* 공지사항 */
     .notice-btn{
         padding:3px 8px;
-        top:-53px;
+        top:-35px;
     }
     .notice > ul > li > a{
         width:84px;
@@ -717,10 +736,11 @@
     }
     .help article h3{
         font-size:23px;
+        margin-bottom:0;
     }
     .card-btn{
         padding:3px 8px;
-        top:-53px;
+        top:-35px;
     }
     .card ul li:last-child{
         margin:0;
@@ -739,6 +759,7 @@
     .card ul li strong{
         padding:77px 0 0 0;
         text-align:center;
+        font-size:16px;
     }    
     .card ul li em{
         padding:0;
@@ -767,6 +788,9 @@
     }
     .footer-info address p{
         font-size:10px;
+    }
+    .footer-info .bar2{
+        color:#fff;
     }
 
 }
