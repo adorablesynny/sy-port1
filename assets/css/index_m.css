@@ -73,25 +73,19 @@
 }
 
 @media (max-width:1024px){
-    #mNav{ 
-        display:block;
-    }
-
     header .row{ 
         padding:0 24px;
     }
     .header h1{ 
         float:none; 
-        text-align:center;
+        text-align:left;
+        display: inline-block;
     }
     .header h1 em{ 
-        margin:-20px 0 0 0;
-        padding-top:18px;
+        margin:0;
+        padding:0;
     }
     .header h1 strong{ 
-        display:none;
-    }
-    .nav { 
         display:none;
     }
 
@@ -314,7 +308,7 @@
         margin: 24px; 
         padding: 24px;
     }
-    #movie .ir_so{ 
+    #movie .ir_hide{ 
         position:static; 
         width: auto; 
         height:auto; 
@@ -472,6 +466,13 @@
 }
 
 @media (max-width:600px){
+    #mNav{ 
+        display:block;
+    }
+    .header nav.PNav{
+        display:none;
+    }
+
     #movie .container{ 
         position:relative; 
     }
@@ -490,7 +491,7 @@
         padding:16px;
     }
 
-    #movie .ir_so{ 
+    #movie .ir_hide{ 
         font-size:22px; 
         padding-bottom:10px; 
         line-height:1;

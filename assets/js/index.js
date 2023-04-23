@@ -128,3 +128,18 @@ $(window).on("scroll",function(){
         $(".btn-gotoTop").removeClass("hide");
     }
 });
+
+/* 모바일 화면 */
+let mobMenubtn = $("#header .ham");
+
+mobMenubtn.on("click",function(){
+    $("header #mNav .mob_main_menu").toggleClass('open');
+    
+    if( $("header #mNav .mob_main_menu").hasClass('open')){
+        $("html, body").css({"overflow-y":"hidden"});
+    }else{
+        $("html, body").css({"overflow-y":"visible"});
+    }
+
+});
+

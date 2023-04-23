@@ -20,7 +20,7 @@
 }
 
 /* 레이아웃 */
-body{position:relative;}
+body{position:relative; overflow-x:hidden;}
 #mNav{
     display:none;
     position:absolute;
@@ -65,6 +65,8 @@ footer{
     width: 25px;
     height: 10px;
     padding:15px 10px 10px 10px;
+    z-index:99;
+    position: relative;
 }
 .ham span{
     display: block;
@@ -92,6 +94,44 @@ footer{
     position: absolute;
     top:-7px;
     left:0;
+}
+header #mNav .mob_main_menu{
+    display: block;
+    height:auto;
+    width:300px;
+    position: absolute;
+    z-index:998;
+    height:100vh;
+    background-color: #fff;
+    padding:100px 30px;
+    top:-50px;
+    left:50px;
+    z-index:96;
+    transition:all .4s;
+}
+header #mNav .mob_main_menu.open{
+    left:-300px;
+}
+header #mNav .mob_main_menu+.overlay{
+    transition:all .4s;
+}
+header #mNav .mob_main_menu.open+.overlay{
+    width:130vw;
+    height:110vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:-30px;
+    left:-100vw;
+    z-index:95;
+}
+header #mNav .mob_main_menu > li{
+    float:none;
+    border-bottom:1px solid #fb4357;
+    width:100%;
+    text-align:left;
+}
+header #mNav .mob_main_menu > li a{
+    padding:30px 0;
 }
 
 
@@ -137,7 +177,7 @@ header{
 }
 .header nav ul li a{
     display: block;
-    padding:10px 0;
+    padding:18px 0 0 0;
     font-size: 17px;
     font-weight:400;
     color:#444;
