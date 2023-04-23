@@ -130,7 +130,7 @@ $(window).on("scroll",function(){
 });
 
 /* 모바일 화면 */
-let mobMenubtn = $("#header .ham");
+let mobMenubtn = $("header .ham");
 
 mobMenubtn.on("click",function(){
     $("header #mNav .mob_main_menu").toggleClass('open');

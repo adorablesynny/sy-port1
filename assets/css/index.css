@@ -24,8 +24,8 @@ body{position:relative; overflow-x:hidden;}
 #mNav{
     display:none;
     position:absolute;
-    top:13px;
     right:24px;
+    top:19px;
 }
 header{
     width: 100%;
