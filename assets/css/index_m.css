@@ -631,6 +631,17 @@
 
 @media (min-width:280px) and (max-width:599px){
 
+    header #mNav .mob_main_menu.open{
+        left:-218px;
+    }
+    header #mNav .mob_main_menu > li{
+        width:60%;
+    }
+    header #mNav .mob_main_menu > li a{
+        padding:20px 0;
+        font-size:14px;
+    }
+
     .slider .swiper-slide h2{
         font-size:23px;
     }

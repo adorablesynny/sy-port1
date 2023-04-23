@@ -54,16 +54,27 @@
             <div class="row">
                 <div class="header clearfix">
                     <h1>
-                        <a href="../index.html" title="씨지브이 메인 페이지로 이동하기">
+                        <a href="#" title="씨지브이 메인 페이지로 이동하기">
                         <em><img src="assets/img/cgv_logo.png" alt="씨지브이"></em>
                         <strong>CULTUREPLEX</strong>
                         </a>
                     </h1>
                     <nav id="mNav">
-                        <h2 class="ir_so">씨지브이 전체 메뉴</h2>
-                        <a href="#" class="ham"><span></span></a>
+                        <h2 class="ir_hide">씨지브이 전체 메뉴</h2>
+                        <a href="#" class="ham" title="모바일용 메뉴">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <ul class="mob_main_menu">
+                            <li><a  href="sub/" title="">로그인</a></li>
+                            <li><a href="sub/" title="">회원가입</a></li>
+                            <li><a href="sub/" title="">이벤트</a></li>
+                            <li><a href="sub/" title="">고객센터</a></li>
+                        </ul>
+                        <div class="overlay"></div>
                     </nav>
-                    <nav class="nav">
+                    <nav class="PNav">
                         <ul class="clearfix">
                             <li><a  href="sub/" title="">로그인</a></li>
                             <li><a href="sub/" title="">회원가입</a></li>
@@ -79,7 +90,7 @@
 
     <!-- 준비중 -->
     <section id="prepare">
-        <h2 class="ir_so">준비중</h2>
+        <h2 class="ir_hide">준비중</h2>
         <div class="prepare">
             <div class="text">
                 <img src="assets/img/wait.gif" alt="현재 준비중입니다.">
@@ -139,9 +150,7 @@
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/ie-checker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/iframe_api.js"></script>
-    <script src="assets/js/movie-.js"></script>
+    <script src="../assets/js/index.js"></script>
 
 
 

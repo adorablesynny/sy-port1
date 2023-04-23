@@ -55,43 +55,102 @@ footer{
 .ham{
     display:block;
     width: 25px;
-    height: 10px;
-    padding:15px 10px 10px 10px;
+    height: 22px;
+    z-index:99;
+    position: relative;
+    right:10px;
 }
-.ham span{
+.ham span:first-child{
     display: block;
     width: 25px;
-    height: 4px;
-    background: #fb4357;  
-    position: relative;  
+    height:4px;
+    background: rgb(255, 115, 86);  
+    position: absolute;  
+    transition:all .4s;
+    left:0;
+    top:9px;
 }
-.ham span::before{
+.ham span:nth-child(2){
     content:"";
     display: block;
     width: 25px;
     height: 4px;
-    background: #fb4357;  
+    background: rgb(255, 115, 86);  
     position: absolute;
-    bottom:-7px;
+    top:0;
     left:0;
+    transition:all .4s;
 }
-.ham span::after{
+.ham span:nth-child(3){
     content:"";
     display: block;
     width: 25px;
     height: 4px;
-    background: #fb4357;  
+    background: rgb(255, 115, 86);  
     position: absolute;
-    top:-7px;
+    bottom:0;
     left:0;
+    transition:all .4s;
 }
+.ham.movement span:first-child{
+    opacity:0;
+}
+.ham.movement span:nth-child(2){
+    -webkit-transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
+}
+.ham.movement span:nth-child(3){
+    -webkit-transform: translateY (-7px) rotate (-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+}
+header #mNav .mob_main_menu{
+    display: block;
+    height:auto;
+    width:300px;
+    position: absolute;
+    z-index:998;
+    height:100vh;
+    background-color: #fff;
+    padding:100px 30px;
+    top:-50px;
+    left:50px;
+    z-index:96;
+    transition:all .4s;
+    opacity:0;
+}
+header #mNav .mob_main_menu.open{
+    left:-300px;
+    opacity:1;
+}
+header #mNav .mob_main_menu+.overlay{
+    transition:all .4s;
+}
+header #mNav .mob_main_menu.open+.overlay{
+    width:130vw;
+    height:110vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:-30px;
+    left:-100vw;
+    z-index:95;
+}
+header #mNav .mob_main_menu > li{
+    float:none;
+    border-bottom:1px solid #fb4357;
+    width:100%;
+    text-align:left;
+}
+header #mNav .mob_main_menu > li a{
+    padding:30px 0;
+}
+
 
 
 /* 헤더 영역 */
 header{
     background-color: #fff;
     border-bottom:3px solid #fb4357;
-    padding:30px 0 20px 0;
+    padding:12px 0;
 }
 .header h1 {
     float: left;

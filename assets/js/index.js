@@ -134,12 +134,23 @@ let mobMenubtn = $("#header .ham");
 
 mobMenubtn.on("click",function(){
     $("header #mNav .mob_main_menu").toggleClass('open');
+    mobMenubtn.toggleClass('movement');
     
     if( $("header #mNav .mob_main_menu").hasClass('open')){
         $("html, body").css({"overflow-y":"hidden"});
+        scrollDisable();
     }else{
         $("html, body").css({"overflow-y":"visible"});
+        scrollAble();
     }
 
 });
+function scrollDisable(){
+    $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+    });
+}
+function scrollAble(){
+    $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+}
 
