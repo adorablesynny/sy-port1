@@ -14,12 +14,6 @@
         font-size: 15px; 
         padding:17px 10px;
     }
-    .header h1 em{ 
-        padding:0px 8px 5px 0;
-    }
-    .header h1 strong{ 
-        top:19px;
-    }
 
     .slider .swiper-button-prev, .slider .swiper-button-next{ 
         width: 18px;
